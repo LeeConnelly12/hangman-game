@@ -1,17 +1,28 @@
 <script setup>
+import Heart from '@/components/shared/Heart.vue'
 import MenuButton from '@/components/shared/MenuButton.vue'
+import { useGameStore } from '@/stores/game'
 import { ref } from 'vue'
+
+const store = useGameStore()
 
 const isPaused = ref(false)
 </script>
 
 <template>
   <div class="px-6 pt-12">
-    <div class="flex items-center">
+    <div class="grid grid-cols-[auto_auto_1fr_auto_auto] items-center gap-4">
       <MenuButton @click="isPaused = true" />
-      <h1 class="ml-4 text-[2.5rem] leading-none">
+      <h1 class="text-[2.5rem] leading-none">
         <slot name="category" />
       </h1>
+      <div class="col-start-4 h-4 w-14 rounded-full bg-white p-1">
+        <div
+          class="h-2 rounded-full bg-dark-navy"
+          :style="{ width: `${store.health}%` }"
+        ></div>
+      </div>
+      <Heart class="w-6" />
     </div>
     <slot />
   </div>
