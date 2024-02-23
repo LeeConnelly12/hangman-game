@@ -1,8 +1,12 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
 
-export const useGameStore = defineStore('game', () => {
-  const health = ref(100)
-
-  return { health }
+export const useGameStore = defineStore('game', {
+  state: () => ({
+    health: 100,
+  }),
+  actions: {
+    guessedIncorrectly() {
+      this.health -= 12
+    },
+  },
 })
