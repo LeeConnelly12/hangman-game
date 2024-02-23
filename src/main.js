@@ -10,7 +10,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `Hangman - ${to.name}`
+  document.title = `Hangman - ${to.meta.title}`
   next()
 })
 
