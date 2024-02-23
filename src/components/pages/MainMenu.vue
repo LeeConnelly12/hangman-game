@@ -18,7 +18,7 @@ import Play from '@/components/shared/Play.vue'
       </router-link>
       <router-link
         to="/how-to-play"
-        class="mt-14 inline-block w-full rounded-[2.5rem] bg-blue py-2 text-center text-[2rem] uppercase"
+        class="mt-14 inline-block w-full rounded-[2.5rem] bg-blue py-2 text-center text-[2rem] uppercase leading-none"
       >
         How to play
       </router-link>
