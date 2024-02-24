@@ -35,14 +35,14 @@ function guess(guessedLetter) {
   <Layout>
     <template #category>{{ category }}</template>
     <div class="mt-20 grid grid-cols-[repeat(auto-fit,2.5rem)] gap-x-2 gap-y-6">
-      <button
+      <div
         v-for="letter in letters"
         type="button"
-        class="h-16 rounded-xl bg-blue"
+        class="grid h-16 place-items-center rounded-xl bg-blue"
         :class="{ 'opacity-25': !guessedLetters.includes(letter) }"
       >
         <template v-if="guessedLetters.includes(letter)">{{ letter }}</template>
-      </button>
+      </div>
     </div>
     <div
       class="mt-28 grid grid-cols-[repeat(auto-fit,1.75rem)] gap-x-2 gap-y-6"
