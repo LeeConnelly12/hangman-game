@@ -24,7 +24,6 @@ function guess(guessedLetter) {
 
   if (!isCorrect) {
     store.guessedIncorrectly()
-    return
   }
 
   guessedLetters.value.push(guessedLetter)
