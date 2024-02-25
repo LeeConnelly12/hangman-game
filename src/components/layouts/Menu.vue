@@ -3,7 +3,7 @@ import BackLink from '@/components/shared/BackLink.vue'
 </script>
 
 <template>
-  <div class="px-6 pt-8 md:pt-14">
+  <div class="px-6 pb-14 pt-8 md:pb-24 md:pt-14">
     <div class="mx-auto grid grid-cols-[auto_1fr] items-center xl:max-w-7xl">
       <BackLink />
       <h1
