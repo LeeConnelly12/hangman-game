@@ -12,7 +12,7 @@ export default {
         'dark-navy': '#261676',
         blue: '#2463FF',
         'light-blue': '#7199FF',
-        purple: '#887DC0',
+        purple: '#9D2DF5',
         pink: '#FE71FE',
       },
     },

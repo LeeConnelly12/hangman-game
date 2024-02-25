@@ -2,7 +2,7 @@
   <a
     href="#!"
     @click="$router.back()"
-    class="from-pink to-light-blue grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b md:h-16 md:w-16"
+    class="from-pink to-light-blue grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b shadow-[0_-3px_0_5px_inset] shadow-purple/25 hover:brightness-110 md:h-16 md:w-16"
   >
     <svg
       class="w-4 md:w-7"
