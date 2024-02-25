@@ -11,7 +11,7 @@ import Play from '@/components/shared/Play.vue'
       <Logo class="mx-auto -mt-12 w-full max-w-64 md:-mt-28 md:max-w-96" />
       <router-link to="/pick-a-category" class="mt-14 inline-block">
         <div
-          class="grid h-40 w-40 place-items-center rounded-full bg-gradient-to-b from-[#FE71FE] to-[#7199FF] shadow-[#243041_0_-4px_0_5px_inset,#9D2DF5_0_-12px_0_11px_inset] hover:brightness-110"
+          class="from-pink to-light-blue grid h-40 w-40 place-items-center rounded-full bg-gradient-to-b shadow-[#243041_0_-4px_0_5px_inset,#9D2DF5_0_-12px_0_11px_inset] hover:brightness-110"
         >
           <Play class="w-14" />
         </div>

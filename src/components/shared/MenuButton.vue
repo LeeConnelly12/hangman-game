@@ -1,6 +1,6 @@
 <template>
   <button
-    class="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b from-[#FE71FE] to-[#7199FF]"
+    class="from-pink to-light-blue grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b"
     type="button"
   >
     <svg

@@ -11,7 +11,9 @@ export default {
       colors: {
         'dark-navy': '#261676',
         blue: '#2463FF',
+        'light-blue': '#7199FF',
         purple: '#887DC0',
+        pink: '#FE71FE',
       },
     },
   },
