@@ -2,10 +2,10 @@
   <a
     href="#!"
     @click="$router.back()"
-    class="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b from-[#FE71FE] to-[#7199FF]"
+    class="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b from-[#FE71FE] to-[#7199FF] md:h-16 md:w-16"
   >
     <svg
-      class="w-4"
+      class="w-4 md:w-7"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 41 39"
       fill="none"

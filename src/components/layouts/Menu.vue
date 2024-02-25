@@ -3,11 +3,11 @@ import BackLink from '@/components/shared/BackLink.vue'
 </script>
 
 <template>
-  <div class="px-6 pt-8">
-    <div class="flex items-center justify-between">
+  <div class="px-6 pt-8 md:pt-14">
+    <div class="mx-auto grid grid-cols-[auto_1fr] items-center xl:max-w-7xl">
       <BackLink />
       <h1
-        class="bg-gradient-to-b from-[#67B6FF] to-white bg-clip-text text-5xl text-transparent"
+        class="bg-gradient-to-b from-[#67B6FF] to-white bg-clip-text text-right text-5xl text-transparent md:text-center md:text-8xl"
       >
         <slot name="title" />
       </h1>
