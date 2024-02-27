@@ -11,18 +11,24 @@ const isPaused = ref(false)
 
 <template>
   <div class="px-6 pt-12">
-    <div class="grid grid-cols-[auto_auto_1fr_auto_auto] items-center gap-4">
+    <div
+      class="mx-auto grid grid-cols-[auto_auto_1fr_auto_auto] items-center xl:max-w-7xl"
+    >
       <MenuButton @click="isPaused = true" />
-      <h1 class="text-[2.5rem] leading-none">
+      <h1
+        class="ml-4 text-[2.5rem] leading-none md:ml-8 md:text-5xl xl:ml-14 xl:text-[5.5rem]"
+      >
         <slot name="category" />
       </h1>
-      <div class="col-start-4 h-4 w-14 rounded-full bg-white p-1">
+      <div
+        class="col-start-4 grid h-4 w-14 items-center rounded-full bg-white p-1 md:h-8 md:w-40 md:px-3 md:py-0 xl:w-60"
+      >
         <div
-          class="h-2 rounded-full bg-dark-navy"
+          class="h-2 rounded-full bg-dark-navy md:h-3"
           :style="{ width: `${store.health}%` }"
         ></div>
       </div>
-      <Heart class="w-6" />
+      <Heart class="ml-4 w-6 md:ml-10 md:w-12" />
     </div>
     <slot />
   </div>
