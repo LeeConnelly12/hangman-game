@@ -47,7 +47,7 @@ const steps = [
           {{ step.title }}
         </h2>
         <p
-          class="col-span-full text-purple md:col-start-2 md:text-xl xl:mt-10 xl:text-2xl"
+          class="col-span-full text-[#887DC0] md:col-start-2 md:text-xl xl:mt-10 xl:text-2xl"
         >
           {{ step.text }}
         </p>
